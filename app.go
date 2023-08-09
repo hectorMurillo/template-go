@@ -20,7 +20,7 @@ func main() {
 		port = os.Getenv("PORT")
 	}
 
-	http.HandleFunc("/Ejemplo", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		t.Execute(w, "")
 	})
 
